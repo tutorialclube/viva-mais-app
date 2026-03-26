@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://b18wwj2nl40db"]
+
+[ext_resource type="Script" uid="uid://xsgwqgjs1g6s" path="res://home.gd" id="1_tt30a"]
+[ext_resource type="FontFile" uid="uid://cuv2tuqgu0idi" path="res://Poppins-Black.ttf" id="2_o1ld7"]
+[ext_resource type="FontFile" uid="uid://d24o3m36kg6ur" path="res://Poppins-Regular.ttf" id="3_2ayvv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ey7h"]
+font = ExtResource("2_o1ld7")
+font_size = 32
+font_color = Color(0.704129, 0.99607974, 0.69408387, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tt30a"]
+font = ExtResource("3_2ayvv")
+font_size = 13
+
+[sub_resource type="Theme" id="Theme_tt30a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxycn"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.9882353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_86xni"]
+font = ExtResource("2_o1ld7")
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o1ld7"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.5502857, 0.9456125, 0.41125748, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_qq0qw"]
+font = ExtResource("2_o1ld7")
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ayvv"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.5647059, 0.03137255, 0.68235296, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_q6q8i"]
+font = ExtResource("2_o1ld7")
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1mvj"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.49411765, 0.49411765, 0.49411765, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_tdh31"]
+font = ExtResource("2_o1ld7")
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o1ld7"]
+font = ExtResource("3_2ayvv")
+font_size = 12
+font_color = Color(0.68, 0.68, 0.68, 1)
+
+[node name="Home" type="Control" unique_id=2096272506]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tt30a")
+
+[node name="ContainerPrincipal" type="VBoxContainer" parent="." unique_id=1425692618]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Titulo" type="Label" parent="ContainerPrincipal" unique_id=1871066958]
+layout_mode = 2
+text = "Viva+"
+label_settings = SubResource("LabelSettings_1ey7h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelDica" type="Label" parent="ContainerPrincipal" unique_id=939835373]
+layout_mode = 2
+text = "Bem-vinda! Vamos cuidar da sua saúde 💙"
+label_settings = SubResource("LabelSettings_tt30a")
+
+[node name="VBoxContaineragua" type="VBoxContainer" parent="." unique_id=225958664]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 116.0
+offset_right = 360.0
+offset_bottom = 206.0
+theme_override_constants/separation = 25
+
+[node name="AguaPanel" type="Panel" parent="VBoxContaineragua" unique_id=2067943315]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_tt30a")
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxycn")
+
+[node name="LabelAgua" type="Label" parent="VBoxContaineragua/AguaPanel" unique_id=497793832]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 10.0
+offset_right = 211.0
+offset_bottom = 36.0
+text = "Água: 0 ml"
+label_settings = SubResource("LabelSettings_86xni")
+horizontal_alignment = 1
+
+[node name="BtnAgua" type="Button" parent="VBoxContaineragua/AguaPanel" unique_id=663668745]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 42.0
+offset_right = 229.0
+offset_bottom = 73.0
+text = "Beber 250ml"
+
+[node name="VBoxContaineratividade" type="VBoxContainer" parent="." unique_id=739411428]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 237.0
+offset_right = 359.0
+offset_bottom = 332.0
+
+[node name="AtividadePanel" type="Panel" parent="VBoxContaineratividade" unique_id=723499443]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_o1ld7")
+
+[node name="LabelAtividade" type="Label" parent="VBoxContaineratividade/AtividadePanel" unique_id=1983529764]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 17.0
+offset_right = 249.0
+offset_bottom = 43.0
+text = "Atividade: 0 min"
+label_settings = SubResource("LabelSettings_qq0qw")
+
+[node name="BtnAtividade" type="Button" parent="VBoxContaineratividade/AtividadePanel" unique_id=27722474]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 53.0
+offset_right = 212.0
+offset_bottom = 84.0
+text = "+10 min"
+
+[node name="VBoxContainersono" type="VBoxContainer" parent="." unique_id=183478810]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 364.0
+offset_right = 358.0
+offset_bottom = 462.0
+
+[node name="SonoPanel" type="Panel" parent="VBoxContainersono" unique_id=711851860]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_2ayvv")
+
+[node name="LabelSono" type="Label" parent="VBoxContainersono/SonoPanel" unique_id=505074812]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 17.0
+offset_right = 220.0
+offset_bottom = 43.0
+text = "Sono: 0h"
+label_settings = SubResource("LabelSettings_q6q8i")
+
+[node name="BtnSono" type="Button" parent="VBoxContainersono/SonoPanel" unique_id=1760168076]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 52.0
+offset_right = 200.0
+offset_bottom = 83.0
+text = "+1h"
+
+[node name="VBoxContainerpontos" type="VBoxContainer" parent="." unique_id=968378819]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 494.0
+offset_right = 359.0
+offset_bottom = 586.0
+
+[node name="PontosPanel" type="Panel" parent="VBoxContainerpontos" unique_id=274117235]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_w1mvj")
+
+[node name="LabelPontos" type="Label" parent="VBoxContainerpontos/PontosPanel" unique_id=37348786]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 40.0
+offset_right = 231.0
+offset_bottom = 70.0
+text = "Pontos: 0"
+label_settings = SubResource("LabelSettings_tdh31")
+
+[node name="LabelAutor" type="Label" parent="VBoxContainerpontos/PontosPanel" unique_id=249759150]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 96.0
+offset_right = 361.0
+offset_bottom = 114.0
+text = "Desenvolvido por Ana Cristina ✨"
+label_settings = SubResource("LabelSettings_o1ld7")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContaineragua/AguaPanel/BtnAgua" to="." method="_on_btn_agua_pressed"]
+[connection signal="pressed" from="VBoxContaineratividade/AtividadePanel/BtnAtividade" to="." method="_on_btn_atividade_pressed"]
+[connection signal="pressed" from="VBoxContainersono/SonoPanel/BtnSono" to="." method="_on_btn_sono_pressed"]
