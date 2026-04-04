@@ -34,6 +34,10 @@ O aplicativo utiliza uma lógica de recomendação que analisa as ações do usu
 
 https://youtube.com/shorts/1OBkNZWdakU?feature=share
 
+## 📱 Download
+
+Baixe o app aqui:
+https://drive.google.com/file/d/1CJw_AhyNr-mVmN4lKW4tVxpbS49oy2K3/view?usp=sharing
 
 
 ## 🎯 Objetivo
