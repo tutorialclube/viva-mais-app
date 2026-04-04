@@ -30,6 +30,11 @@ O aplicativo utiliza uma lógica de recomendação que analisa as ações do usu
 - GDScript
 
 ---
+## 🎥 Demonstração do App
+
+https://youtube.com/shorts/1OBkNZWdakU?feature=share
+
+
 
 ## 🎯 Objetivo
 
